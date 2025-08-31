@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<!--
+This file was patched for GitHub Pages:
+- Uses relative assets (assets/profile.jpg, resume.pdf).
+- Added id="nav-menu" to match aria-controls.
+- Set canonical and og:url placeholders — replace with your real GitHub Pages URL after publishing.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mohsin Ali - Senior Database Architect & Cloud Specialist | Multi-Cloud Database Expert</title>
+    <meta name="description" content="Senior Database Architect with 15+ years of experience in Oracle, PostgreSQL, MySQL, SQL Server, and MongoDB across OCI, AWS, and Azure. Leading database transformations for enterprise clients across UAE, Singapore, and Saudi Arabia.">
+    <link rel="canonical" href="https://<your-username>.github.io/<your-repo>">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mohsin Ali - Senior Database Architect & Cloud Specialist">
+    <meta property="og:description" content="Senior Database Architect with 15+ years of experience in Oracle, PostgreSQL, MySQL, SQL Server, and MongoDB across OCI, AWS, and Azure. Leading database transformations for enterprise clients.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://<your-username>.github.io/<your-repo>">
+    <meta property="og:image" content="assets/profile.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mohsin Ali - Senior Database Architect & Cloud Specialist">
+    <meta name="twitter:description" content="Senior Database Architect with 15+ years of experience in Oracle, PostgreSQL, MySQL, SQL Server, and MongoDB across OCI, AWS, and Azure.">
+    <meta name="twitter:image" content="assets/profile.jpg">
+    
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohsin Ali",
+        "jobTitle": "Senior Database Architect",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "iSOFT - Road and Transport Authority"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sharjah",
+            "addressCountry": "UAE"
+        },
+        "email": "mohsin.uetion@gmail.com",
+        "sameAs": ["https://www.linkedin.com/in/mohsinali87", "https://upwork.com/freelancers/mohsinali1987"],
+        "telephone": "+971507601581"
+    }
+    </script>
+
+    <style>
+        /* CSS Variables for Theme */
+        :root {
+            --bg-primary: #0a0f1a;
+            --bg-secondary: #0f1419;
+            --bg-card: #1a1f2e;
+            --bg-card-hover: #22293a;
+            --text-primary: #ffffff;
+            --text-secondary: #b8c5d1;
+            --text-muted: #8892a6;
+            --accent-primary: #00d4ff;
+            --accent-secondary: #0099cc;
+            --accent-tertiary: #00ffaa;
+            --border: #2a3441;
+            --shadow: rgba(0, 0, 0, 0.4);
+            --shadow-hover: rgba(0, 212, 255, 0.2);
+            --gradient-primary: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            --gradient-hero: linear-gradient(135deg, #0a0f1a 0%, #1a1f2e 100%);
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-mono: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            --border-radius: 16px;
+            --border-radius-sm: 8px;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            --max-width: 1200px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 255, 170, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(0, 153, 204, 0.05) 0%, transparent 50%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Skip Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: var(--border-radius-sm);
+            z-index: 1000;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 15, 26, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .nav-logo:hover {
+            color: var(--accent-primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-lg);
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--accent-primary);
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+
+        .nav-link.active {
+            color: var(--accent-primary);
+            background: rgba(0, 212, 255, 0.1);
+        }
+
+        /* Mobile Navigation Toggle */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: var(--spacing-xs);
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+        }
+
+        .nav-toggle:hover,
+        .nav-toggle:focus {
+            background: var(--bg-card);
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 70px;
+        }
+
+        section {
+            padding: var(--spacing-2xl) var(--spacing-md);
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: var(--spacing-2xl);
+            align-items: center;
+            background: var(--gradient-hero);
+            position: relative;
+        }
+
+        .hero-content {
+            order: 1;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: var(--gradient-primary);
+            color: var(--bg-primary);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: var(--spacing-sm);
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--accent-primary);
+            margin-bottom: var(--spacing-sm);
+            font-weight: 600;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xl);
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            order: 2;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 40px var(--shadow-hover);
+            position: relative;
+            overflow: hidden;
+            border: 4px solid var(--accent-primary);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.3;
+            filter: blur(8px);
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: var(--bg-primary);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px var(--shadow-hover);
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-primary);
+            border: 2px solid var(--accent-primary);
+        }
+
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+            transform: translateY(-2px);
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+
+        /* Card Styles */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            transition: var(--transition);
+            box-shadow: 0 4px 20px var(--shadow);
+        }
+
+        .card:hover {
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px var(--shadow-hover);
+            border-color: var(--accent-primary);
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-xl);
+            text-align: center;
+        }
+
+        .about-text {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            margin-top: var(--spacing-lg);
+        }
+
+        .skill-tag {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent-primary);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            transition: var(--transition);
+        }
+
+        .skill-tag:hover {
+            background: rgba(0, 212, 255, 0.2);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+        }
+
+        /* Experience Section */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-lg);
+            position: relative;
+        }
+
+        .experience-grid::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gradient-primary);
+        }
+
+        .experience-card {
+            position: relative;
+            margin-left: var(--spacing-xl);
+        }
+
+        .experience-card::before {
+            content: '';
+            position: absolute;
+            left: -42px;
+            top: 20px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px var(--bg-primary), 0 0 0 6px var(--accent-primary);
+        }
+
+        .experience-card:nth-child(even) {
+            margin-left: 0;
+            margin-right: var(--spacing-xl);
+        }
+
+        .experience-card:nth-child(even)::before {
+            right: -42px;
+            left: auto;
+        }
+
+        .experience-header {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .experience-role {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .experience-company {
+            font-size: 1rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .experience-dates {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+        }
+
+        .experience-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .experience-list li {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xs);
+            position: relative;
+            padding-left: var(--spacing-md);
+        }
+
+        .experience-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-logo {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-md);
+            font-size: 1.5rem;
+            color: var(--bg-primary);
+            font-weight: 700;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .project-client {
+            font-size: 0.875rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .service-card {
+            text-align: left;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-md);
+            font-size: 1.25rem;
+            color: var(--bg-primary);
+        }
+
+        .service-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .service-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Certifications Section */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .certification-card {
+            text-align: center;
+            position: relative;
+        }
+
+        .certification-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-md);
+            font-size: 1.5rem;
+            color: var(--bg-primary);
+        }
+
+        .certification-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .certification-issuer {
+            color: var(--accent-primary);
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            font-size: 0.875rem;
+        }
+
+        .certification-year {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            font-family: var(--font-mono);
+        }
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: var(--transition);
+            padding: var(--spacing-sm);
+            border-radius: var(--border-radius);
+        }
+
+        .contact-item:hover,
+        .contact-item:focus {
+            color: var(--accent-primary);
+            background: rgba(0, 212, 255, 0.1);
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+
+        .contact-icon {
+            font-size: 1.25rem;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--spacing-xl);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: var(--spacing-lg);
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            color: var(--text-muted);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--bg-secondary);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: var(--spacing-md);
+                padding: var(--spacing-lg);
+                transition: var(--transition);
+                border-right: 1px solid var(--border);
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: var(--spacing-lg);
+            }
+
+            .hero-content {
+                order: 2;
+            }
+
+            .hero-image {
+                order: 1;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+
+            .experience-grid::before {
+                display: none;
+            }
+
+            .experience-card,
+            .experience-card:nth-child(even) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .experience-card::before,
+            .experience-card:nth-child(even)::before {
+                display: none;
+            }
+
+            .projects-grid,
+            .services-grid,
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container {
+                padding: 0 var(--spacing-sm);
+            }
+
+            section {
+                padding: var(--spacing-lg) var(--spacing-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">MOHSIN ALI</a>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="#certifications" class="nav-link" role="menuitem">Certifications</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <span class="badge">DBA Specialist</span>
+                    <span class="badge">Multi-Cloud Expert</span>
+                </div>
+                <h1 id="hero-title" class="hero-title">Mohsin Ali</h1>
+                <h2 class="hero-subtitle">Senior Database Specialist | Database Architect | Team Leader</h2>
+                <p class="hero-description">
+                    Seasoned Database Architect and Cloud Specialist with over 15 years of hands-on experience in architecting, optimizing, and securing mission-critical data platforms across Oracle, PostgreSQL, MySQL, SQL Server, and MongoDB.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="resume.pdf" class="btn btn-secondary" download>📄 Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/profile.jpg" alt="Mohsin Ali - Senior Database Architect">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="section-header">
+                <h2 id="about-title" class="section-title">About Me</h2>
+                <p class="section-subtitle">Delivering enterprise-scale data solutions through strategic database architecture</p>
+            </div>
+            <div class="about-content">
+                <p class="about-text">
+                    Mohsin Ali is a seasoned Database Architect and Cloud Specialist with over 15 years of experience driving large-scale database transformations across the Middle East, Asia, and beyond. Recognized for architecting mission-critical data platforms across Oracle, PostgreSQL, MySQL, SQL Server, and MongoDB environments.
+                </p>
+                <p class="about-text">
+                    As Lead Technical Architect at iSOFT-RTA Dubai, Mohsin oversees complex database infrastructure design primarily on OCI, with hybrid cloud integrations. His leadership spans high-availability solutions including PostgreSQL EFM clusters, SQL Server Always-On, Oracle RAC, and MongoDB ReplicaSets across UNIX, Linux, and Windows environments.
+                </p>
+                <div class="skills-grid">
+                    <span class="skill-tag">Multi-Cloud Architecture (OCI, AWS, Azure)</span>
+                    <span class="skill-tag">Oracle RAC & Data Guard</span>
+                    <span class="skill-tag">PostgreSQL (Patroni/repmgr)</span>
+                    <span class="skill-tag">MySQL InnoDB Cluster</span>
+                    <span class="skill-tag">MongoDB ReplicaSet & Sharding</span>
+                    <span class="skill-tag">SQL Server Always-On</span>
+                    <span class="skill-tag">Oracle GoldenGate</span>
+                    <span class="skill-tag">Redis Sentinel</span>
+                    <span class="skill-tag">Database Security & Compliance</span>
+                    <span class="skill-tag">Performance Tuning</span>
+                    <span class="skill-tag">Disaster Recovery</span>
+                    <span class="skill-tag">Automation & DevOps</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience" aria-labelledby="experience-title">
+            <div class="section-header">
+                <h2 id="experience-title" class="section-title">Experience</h2>
+                <p class="section-subtitle">Leading database transformations across diverse industries</p>
+            </div>
+            <div class="experience-grid">
+                <div class="card experience-card">
+                    <div class="experience-header">
+                        <h3 class="experience-role">Lead Technical Architect</h3>
+                        <p class="experience-company">iSOFT – Road and Transport Authority, Dubai</p>
+                        <p class="experience-dates">Mar 2025 – Present</p>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Serving as Lead Technical Architect for RTA, leading secure, scalable database infrastructure design primarily on OCI</li>
+                        <li>Driving three parallel heterogeneous projects: Redis & MongoDB HA on OpenShift, Oracle ADF enterprise applications, and SASO project</li>
+                        <li>Architected Oracle RAC & Data Guard solutions with automated DR failovers, achieving zero RPO/RTO for mission-critical systems</li>
+                        <li>Delivered GoldenGate-based heterogeneous replication across regions for zero-downtime migrations</li>
+                        <li>Orchestrated full-stack replatforming to OCI for Oracle, PostgreSQL, and MySQL using automation</li>
+                    </ul>
+                </div>
+
+                <div class="card experience-card">
+                    <div class="experience-header">
+                        <h3 class="experience-role">Sr. Specialist DBA</h3>
+                        <p class="experience-company">Singapore Telecommunication, Singapore</p>
+                        <p class="experience-dates">Oct 2024 – Mar 2025</p>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Served as Cloud Architect and Migration Lead for hybrid cloud database strategy across Oracle EXACC, AWS, and on-prem workloads</li>
+                        <li>Led enterprise-wide migration from IBM Power9 to Oracle EXACC with near-zero downtime using Data Guard and GoldenGate</li>
+                        <li>Designed PostgreSQL clusters using EFM, Patroni, and pgpool-II for automated failover and fault tolerance</li>
+                        <li>Architected SQL Server Always-On availability groups and MongoDB sharded clusters supporting 2 million subscribers</li>
+                    </ul>
+                </div>
+
+                <div class="card experience-card">
+                    <div class="experience-header">
+                        <h3 class="experience-role">Sr. DBA & OCI Administrator</h3>
+                        <p class="experience-company">GBS-Saudi, Riyadh, KSA</p>
+                        <p class="experience-dates">Mar 2024 – Oct 2024</p>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Led migration and modernization of Oracle Middleware workloads from on-premises to Oracle Cloud Infrastructure</li>
+                        <li>Implemented enterprise-grade data governance frameworks and data quality controls</li>
+                        <li>Migrated Nextcloud-based document management to Oracle Content Management on OCI SaaS</li>
+                        <li>Applied automation principles using Ansible and Jenkins for zero-touch infrastructure provisioning</li>
+                    </ul>
+                </div>
+
+                <div class="card experience-card">
+                    <div class="experience-header">
+                        <h3 class="experience-role">Senior Analyst – Database Administration</h3>
+                        <p class="experience-company">Central Bank of UAE, Abu Dhabi</p>
+                        <p class="experience-dates">Apr 2022 – Mar 2024</p>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Led design and implementation of data warehousing strategies for the central banking system</li>
+                        <li>Architected HA/DR for Oracle, PostgreSQL, and MySQL on Exadata Cloud@Customer (ExaCC)</li>
+                        <li>Migrated Oracle Flexcube, OBIEE, and SOA Suite from On-Prem to OCI ExaCC</li>
+                        <li>Defined enterprise-wide database governance, licensing, and long-term architecture roadmap</li>
+                    </ul>
+                </div>
+
+                <div class="card experience-card">
+                    <div class="experience-header">
+                        <h3 class="experience-role">Oracle, MySQL & OCI Administrator</h3>
+                        <p class="experience-company">Kuwait Food Company, Americana Group, Sharjah</p>
+                        <p class="experience-dates">Nov 2019 – Apr 2022</p>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Led end-to-end migration from on-prem Oracle applications to Oracle Fusion Apps with 99.9% data accuracy</li>
+                        <li>Delivered GoldenGate-based heterogeneous replication for zero-downtime migrations</li>
+                        <li>Built secure ETL pipelines across Oracle, MySQL, PostgreSQL, and SQL Server platforms</li>
+                        <li>Administered Oracle SuperCluster M7 and Exadata systems with firmware patching and storage management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects" aria-labelledby="projects-title">
+            <div class="section-header">
+                <h2 id="projects-title" class="section-title">Key Projects</h2>
+                <p class="section-subtitle">Transformational database initiatives delivering measurable business impact</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="project-logo">RTA</div>
+                    <h3 class="project-title">Multi-Platform Database Architecture</h3>
+                    <p class="project-client">Road Transport Authority, Dubai</p>
+                    <p class="project-description">
+                        Architected comprehensive database infrastructure across Oracle RAC, PostgreSQL clusters, and MongoDB on Red Hat OpenShift for mission-critical transport systems.
+                    </p>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-logo">SGT</div>
+                    <h3 class="project-title">Enterprise Cloud Migration</h3>
+                    <p class="project-client">Singapore Telecommunications</p>
+                    <p class="project-description">
+                        Led migration from IBM Power9 to Oracle EXACC for telecom billing systems supporting 2 million subscribers with zero-downtime transitions.
+                    </p>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-logo">CBU</div>
+                    <h3 class="project-title">Central Banking Data Warehouse</h3>
+                    <p class="project-client">Central Bank of UAE</p>
+                    <p class="project-description">
+                        Designed and implemented enterprise data warehousing strategies with Oracle Flexcube integration and compliance frameworks for central banking operations.
+                    </p>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-logo">GBS</div>
+                    <h3 class="project-title">OCI Middleware Modernization</h3>
+                    <p class="project-client">GBS-Saudi, Riyadh</p>
+                    <p class="project-description">
+                        Orchestrated full-stack migration of Oracle Middleware workloads to OCI with automated deployment pipelines and governance frameworks.
+                    </p>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-logo">AMR</div>
+                    <h3 class="project-title">Oracle Fusion Migration</h3>
+                    <p class="project-client">Kuwait Food Company</p>
+                    <p class="project-description">
+                        Led end-to-end migration from on-premises Oracle applications to Oracle Fusion Apps with 99.9% data accuracy and minimal downtime for restaurant operations.
+                    </p>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-logo">SEC</div>
+                    <h3 class="project-title">Database Security & Compliance</h3>
+                    <p class="project-client">Enterprise Security Implementation</p>
+                    <p class="project-description">
+                        Implemented comprehensive database security frameworks including TLS encryption, RBAC, HashiCorp Vault integration, and compliance monitoring across multiple platforms.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-title">
+            <div class="section-header">
+                <h2 id="services-title" class="section-title">Services</h2>
+                <p class="section-subtitle">Comprehensive database architecture and cloud transformation consulting</p>
+            </div>
+            <div class="services-grid">
+                <div class="card service-card">
+                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                    <h3 class="service-title">Multi-Cloud Database Architecture</h3>
+                    <p class="service-description">
+                        Design and implement scalable database architectures across Oracle Cloud Infrastructure (OCI), AWS, and Azure with high availability and disaster recovery.
+                    </p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="service-title">Database Migration & Modernization</h3>
+                    <p class="service-description">
+                        End-to-end migration services from legacy systems to modern cloud platforms using Oracle GoldenGate, Data Guard, and automated migration tools.
+                    </p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3 class="service-title">Performance Tuning & Optimization</h3>
+                    <p class="service-description">
+                        Advanced SQL tuning, index optimization, query performance analysis, and database health monitoring across Oracle, PostgreSQL, MySQL, and MongoDB.
+                    </p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="service-title">Database Security & Compliance</h3>
+                    <p class="service-description">
+                        Implement robust security frameworks including TLS encryption, RBAC, audit compliance, and secret management using HashiCorp Vault integration.
+                    </p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3 class="service-title">High Availability & Disaster Recovery</h3>
+                    <p class="service-description">
+                        Design failover clusters, replication strategies, and automated backup solutions ensuring zero RPO/RTO for mission-critical database systems.
+                    </p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="service-title">DevOps & Automation</h3>
+                    <p class="service-description">
+                        Build CI/CD pipelines, infrastructure as code, automated patching, and monitoring solutions using Ansible, Jenkins, and cloud-native tools.
+                    </p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="service-title">Team Leadership & Training</h3>
+                    <p class="service-description">
+                        Technical leadership for database teams, knowledge transfer programs, and comprehensive training on modern database technologies and best practices.
+                    </p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="service-title">Data Warehouse & Analytics</h3>
+                    <p class="service-description">
+                        Design enterprise data warehousing solutions, ETL pipelines, real-time analytics platforms, and integration with modern BI tools and frameworks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education" aria-labelledby="education-title">
+            <div class="section-header">
+                <h2 id="education-title" class="section-title">Education</h2>
+                <p class="section-subtitle">Academic qualifications and professional credentials</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="card certification-card">
+                    <div class="certification-icon">🎓</div>
+                    <h3 class="certification-title">Bachelor of Science, Major in Computer Science</h3>
+                    <p class="certification-issuer">University of Engineering and Technology, Peshawar, Pakistan</p>
+                    <p class="certification-year">2009</p>
+                </div>
+
+                <div class="card certification-card">
+                    <div class="certification-icon">📜</div>
+                    <h3 class="certification-title">Degree Equivalency Certificate</h3>
+                    <p class="certification-issuer">Ministry of Education, UAE</p>
+                    <p class="certification-year">2022</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications" aria-labelledby="certifications-title">
+            <div class="section-header">
+                <h2 id="certifications-title" class="section-title">Professional Certifications</h2>
+                <p class="section-subtitle">Industry certifications and specialized credentials</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="card certification-card">
+                    <div class="certification-icon">☁️</div>
+                    <h3 class="certification-title">Google Professional Cloud Database Engineer</h3>
+                    <p class="certification-issuer">Google Cloud Platform</p>
+                    <p class="certification-year">2025</p>
+                </div>
+
+                <div class="card certification-card">
+                    <div class="certification-icon">🔶</div>
+                    <h3 class="certification-title">Oracle Cloud Infrastructure 2025 Certified Multicloud Architect Professional</h3>
+                    <p class="certification-issuer">Oracle Corporation</p>
+                    <p class="certification-year">2025</p>
+                </div>
+
+                <div class="card certification-card">
+                    <div class="certification-icon">⚡</div>
+                    <h3 class="certification-title">Microsoft Certified: Azure Administrator Associate</h3>
+                    <p class="certification-issuer">Microsoft Corporation</p>
+                    <p class="certification-year">2025</p>
+                </div>
+
+                <div class="card certification-card">
+                    <div class="certification-icon">🐘</div>
+                    <h3 class="certification-title">PostgreSQL v16 Certified Professional</h3>
+                    <p class="certification-issuer">PostgreSQL Global Development Group</p>
+                    <p class="certification-year">2025</p>
+                </div>
+
+                <div class="card certification-card">
+                    <div class="certification-icon">🔶</div>
+                    <h3 class="certification-title">Oracle Certified Professional, MySQL 8.0 DBA</h3>
+                    <p class="certification-issuer">Oracle Corporation</p>
+                    <p class="certification-year">2025</p>
+                </div>
+
+                <div class="card certification-card">
+                    <div class="certification-icon">🍃</div>
+                    <h3 class="certification-title">MongoDB Certified Associate DBA</h3>
+                    <p class="certification-issuer">MongoDB Inc.</p>
+                    <p class="certification-year">2025</p>
+                </div>
+
+                <div class="card certification-card">
+                    <div class="certification-icon">🔴</div>
+                    <h3 class="certification-title">Red Hat Technical Workshop - OpenShift Virtualization</h3>
+                    <p class="certification-issuer">Red Hat Inc.</p>
+                    <p class="certification-year">2025</p>
+                </div>
+
+                <div class="card certification-card">
+                    <div class="certification-icon">⚙️</div>
+                    <h3 class="certification-title">Oracle GoldenGate 12c Certified Implementation Specialist</h3>
+                    <p class="certification-issuer">Oracle Corporation</p>
+                    <p class="certification-year">2024</p>
+                </div>
+
+                <div class="card certification-card">
+                    <div class="certification-icon">🚀</div>
+                    <h3 class="certification-title">Redis Certified Developer</h3>
+                    <p class="certification-issuer">Redis Labs</p>
+                    <p class="certification-year">2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="section-header">
+                <h2 id="contact-title" class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to architect your next database transformation project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:mohsin.uetion@gmail.com" class="contact-item" aria-label="Send email">
+                        <span class="contact-icon">📧</span>
+                        <span>mohsin.uetion@gmail.com</span>
+                    </a>
+                    <a href="tel:+971507601581" class="contact-item" aria-label="Call UAE number">
+                        <span class="contact-icon">📱</span>
+                        <span>+971 50 760 1581</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohsinali87" class="contact-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        <span class="contact-icon">💼</span>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <a href="https://upwork.com/freelancers/mohsinali1987" class="contact-item" target="_blank" rel="noopener noreferrer" aria-label="Upwork profile">
+                        <span class="contact-icon">⭐</span>
+                        <span>Upwork Profile (Top-Rated)</span>
+                    </a>
+                    <span class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Al Tawoon, Sharjah, UAE</span>
+                    </span>
+                </div>
+                <div class="contact-buttons">
+                    <a href="mailto:mohsin.uetion@gmail.com" class="btn btn-primary">Send Email</a>
+                    <a href="https://www.linkedin.com/in/mohsinali87" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+                    <a href="https://upwork.com/freelancers/mohsinali1987" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Upwork (Top-Rated)</a>
+                    <a href="resume.pdf" class="btn btn-secondary" download aria-label="Download CV PDF">Download CV</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year">2025</span> Mohsin Ali. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Portfolio Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            initNavigation();
+            initSmoothScrolling();
+            initActiveNavHighlight();
+            initCurrentYear();
+            initMobileNavigation();
+        });
+
+        function initNavigation() {
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nav.style.background = 'rgba(10, 15, 26, 0.98)';
+                } else {
+                    nav.style.background = 'rgba(10, 15, 26, 0.95)';
+                }
+            });
+        }
+
+        function initMobileNavigation() {
+            const nav = document.querySelector('nav');
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navToggle.addEventListener('click', function() {
+                const isExpanded = navMenu.classList.contains('active');
+                navMenu.classList.toggle('active');
+                navToggle.setAttribute('aria-expanded', !isExpanded);
+                navToggle.textContent = isExpanded ? '☰' : '✕';
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.textContent = '☰';
+                });
+            });
+
+            document.addEventListener('click', function(event) {
+                const isClickInsideNav = nav.contains(event.target);
+                if (!isClickInsideNav && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.textContent = '☰';
+                }
+            });
+        }
+
+        function initSmoothScrolling() {
+            const navLinks = document.querySelectorAll('.nav-link, .btn[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 70;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        function initActiveNavHighlight() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section[id]');
+
+            function updateActiveNav() {
+                let currentSection = '';
+                const scrollPos = window.scrollY + 100;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + currentSection) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveNav);
+            updateActiveNav();
+        }
+
+        function initCurrentYear() {
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        }
+    </script>
+</body>
+</html>
